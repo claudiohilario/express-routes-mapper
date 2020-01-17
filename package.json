@@ -1,0 +1,29 @@
+{
+  "name": "express-routes-mapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "nodemon example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiohilario/express-routes-mapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiohilario/express-routes-mapper/issues"
+  },
+  "homepage": "https://github.com/claudiohilario/express-routes-mapper#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
+}
