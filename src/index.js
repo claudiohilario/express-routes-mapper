@@ -14,7 +14,7 @@ function registerRouteFunction(expressRouter, method, path, fnAction) {
   return expressRouter[method](path, fnAction);
 }
 
-function registerRouterController(expressRouter, controllerPath, method, path, action) {
+function registerRouteController(expressRouter, controllerPath, method, path, action) {
   const [controllerFile, methodName] = action.split('.');
 
   const cwd = process.cwd();
@@ -39,7 +39,7 @@ function mapRoutes(routes, { controllerPath = '', globalMiddlewares = [] }) {
     }
 
     if (isString(routeAction) && controllerPath) {
-      registerRouterController(router, controllerPath, methodExpress, path, routeAction);
+      registerRouteController(router, controllerPath, methodExpress, path, routeAction);
       continue;
     }
   }
